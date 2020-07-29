@@ -1,0 +1,7 @@
+寻找列表中占比超过半数的元素(Python)
+def moreThanHalfNum(alits):
+    length=len(alist)//2
+    for num in alist:
+        if alist.count(num)>length:
+            return num
+    return 'no'
