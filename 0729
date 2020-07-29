@@ -15,6 +15,14 @@ def print_execute_time(func):
         return func_return
     #返回嵌套的函数
     return wrapper
- 
-
-        
+#使用之前的方法，传入对应的参数，加上装饰器
+@print_execute_time
+def moreThanHalfNum(alits):
+    length=len(alist)//2
+    for num in alist:
+        if alist.count(num)>length:
+            return num
+    return 'no'
+if __name__=='__main__':
+    #打印
+    print(moreThanHalfNum(a))
